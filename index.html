@@ -1,15 +1,26 @@
 <title>You Are An Idiot</title>
-<video autoplay muted loop id="myVideo">
-  <source src="idiot_Full HD.mp4" type="video/mp4">
-</video>
-<style>
-/* Style the video: 100% width and height to cover the entire window */
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
+<div class="fullscreen-bg">
+    <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
+<source src="video/big_buck_bunny.mp4" type="video/mp4">
+    </video>
+</div>
+<style>        
+fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 </style>  
 
